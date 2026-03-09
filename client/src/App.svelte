@@ -2,7 +2,7 @@
 </script>
 
 <main>
-  <h1>Vite + Svelte</h1>
+  <h1>AgeNet</h1>
 
-  <p>Hello there!</p>
+  <p>Hello Gamer!</p>
 </main>
