@@ -1,0 +1,11 @@
+{
+  "workspace": ["./client", "./server"],
+  "tasks": {
+    "dev": "deno task dev:server & deno task dev:client",
+    "dev:server": "deno task --filter='server' dev",
+    "dev:client": "deno task --filter='client' dev",
+    "start": "deno task --filter='server' start"
+  },
+  "nodeModulesDir": "auto",
+  "unstable": ["fmt-component"]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@agenet/client",
+  "tasks": {
+    "dev": "deno run -A npm:vite"
+  }
+}
