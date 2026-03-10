@@ -6,4 +6,4 @@ app.get("/", (c) => {
   return c.text("Hello, World!");
 });
 
-Deno.serve(app.fetch);
+Deno.serve({ port: 2137, hostname: "0.0.0.0" }, app.fetch);

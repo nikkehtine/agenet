@@ -2,9 +2,16 @@
   "workspace": ["./client", "./server"],
   "tasks": {
     "dev": "deno task dev:server & deno task dev:client",
-    "dev:server": "deno task --filter='server' dev",
     "dev:client": "deno task --filter='client' dev",
-    "start": "deno task --filter='server' start"
+    "dev:server": "deno task --filter='server' dev",
+    "start": "deno task --filter='server' start",
+    "build": "deno task --filter='client' build && deno compile --allow-net --allow-read --allow-env --include client/dist --output agenet server/main.ts"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   },
   "nodeModulesDir": "auto",
   "unstable": ["fmt-component"]
