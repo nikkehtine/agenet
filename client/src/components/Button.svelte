@@ -16,7 +16,11 @@
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background: linear-gradient(0deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(
+      0deg,
+      var(--color-primary),
+      var(--color-secondary)
+    );
     color: var(--color-background-secondary);
     cursor: pointer;
     transition: border-color 0.25s;
